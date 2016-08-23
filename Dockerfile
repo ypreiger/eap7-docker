@@ -1,7 +1,7 @@
 # Originally from: http://blog.couchbase.com/2015/december/jboss-eap7-nosql-javaee-docker
 
 # Use latest jboss/base-jdk:8 image as the base
-FROM jboss/base-jdk:7
+FROM jboss/base-jdk:8
 
 # Set the JBOSS_VERSION env variable
 ENV JBOSS_VERSION 7.0.0
