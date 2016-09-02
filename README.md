@@ -1,7 +1,7 @@
-# jboss-eap-7.0.0 
+# jboss-eap-7.0.0-docker
 
-    git clone https://github.com/Lhuckaz/sonar-ldap-docker.git
-    cd sonar-ldap-docker
+    git clone https://github.com/Lhuckaz/jboss-eap-7.0.0-docker.git
+    cd jboss-eap-7.0.0-docker
     
 Baixar o zip ``jboss-eap-7.0.0.zip`` do site da Red Hat na mesma pasta
 
