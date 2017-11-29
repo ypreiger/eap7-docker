@@ -5,7 +5,7 @@ FROM registry.access.redhat.com/jboss-eap-7/eap70-openshift
 MAINTAINER YP
 
 # deploy app
-ADD product.war $JBOSS_HOME/standalone/deployments/
+ADD ticket-monster.war $JBOSS_HOME/standalone/deployments/
 ADD standalone-openshift.xml $JBOSS_HOME/standalone/configuration
 
 USER root
