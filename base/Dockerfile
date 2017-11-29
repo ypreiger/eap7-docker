@@ -8,6 +8,9 @@ MAINTAINER YP
 ADD wily $JBOSS_HOME/wily
 ADD standalone-openshift.xml $JBOSS_HOME/standalone/configuration
 
+ENV JBOSS_VERSION 7.0.0
+ENV JBOSS_HOME /opt/jboss/jboss-eap-7.0/
+
 USER root
 # In the JBoss EAP container, JBoss EAP runs as the jboss user
 # but copied files are brought in as root
