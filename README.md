@@ -2,7 +2,7 @@
 
 docker build -t eap70-custom:1.0 https://raw.githubusercontent.com/ypreiger/eap7-docker/master/base/Dockerfile
 # docker tag eap70-custom:1.0 eap70-custom:latest
-docker push 172.30.172.155:5000/inventory/eap70-custom:1:0
+docker push docker-registry-default.apps.ocp.mydomain.rh:5000/inventory/eap70-custom:latest
 
     
 Acessar: http://\<host\>:8080/
