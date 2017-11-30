@@ -4,16 +4,10 @@ FROM registry.access.redhat.com/jboss-eap-7/eap70-openshift
 # Maintainer
 MAINTAINER YP
 
-# add wily
-ADD wily $JBOSS_HOME/wily
+RUN echo 'JBOSS HOME ' $JBOSS_HOME
+USER root
 ADD standalone-openshift.xml $JBOSS_HOME/standalone/configuration
 
-ENV JBOSS_VERSION 7.0.0
-ENV JBOSS_HOME /opt/jboss/jboss-eap-7.0/
-
-USER root
-# In the JBoss EAP container, JBoss EAP runs as the jboss user
-# but copied files are brought in as root
 RUN chown jboss:jboss $JBOSS_HOME/standalone/deployments/product.war
 RUN chown jboss:jboss $JBOSS_HOME/standalone/configuration/standalone-openshift.xml
 USER jboss
