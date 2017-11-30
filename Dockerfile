@@ -12,7 +12,7 @@ USER root
 RUN mkdir -p wily
 
 RUN yum --disablerepo="jboss-rhel-ose"  install ksh -y
-RUN yum repolist
+# RUN yum repolist
 
 ADD http://nexus3-cicd.openshift.xxx.com.tr/repository/images/wily.tar /home/jboss/wily/
 RUN ls /home/jboss/wily
