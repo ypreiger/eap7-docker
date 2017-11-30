@@ -6,10 +6,10 @@ MAINTAINER YP
 
 RUN echo 'JBOSS HOME ' $JBOSS_HOME
 USER root
-ADD standalone-openshift.xml $JBOSS_HOME/standalone/configuration
+#ADD standalone-openshift.xml $JBOSS_HOME/standalone/configuration
+#RUN chown jboss:jboss $JBOSS_HOME/standalone/deployments/product.war
 
-RUN chown jboss:jboss $JBOSS_HOME/standalone/deployments/product.war
-RUN chown jboss:jboss $JBOSS_HOME/standalone/configuration/standalone-openshift.xml
+#RUN chown jboss:jboss $JBOSS_HOME/standalone/configuration/standalone-openshift.xml
 USER jboss
 
 # Ensure signals are forwarded to the JVM process correctly for graceful shutdown
