@@ -1,13 +1,8 @@
 # jboss-eap-7.0.0-docker
 
-    git clone https://github.com/Lhuckaz/jboss-eap-7.0.0-docker.git
-    cd jboss-eap-7.0.0-docker
-    
-Baixar o zip ``jboss-eap-7.0.0.zip`` do site da Red Hat na mesma pasta
-
-
-    docker build -t "jboss:7.0" .
-    docker run -it -p 8080:8080 -p 9990:9990 --name jboss_7 jboss:7.0
+docker build -t eap70-custom:1.0 https://raw.githubusercontent.com/ypreiger/eap7-docker/master/app/Dockerfile
+# docker tag eap70-custom:1.0 eap70-custom:latest
+docker push 172.30.172.155:5000/inventory/eap70-custom:1:0
 
     
 Acessar: http://\<host\>:8080/
